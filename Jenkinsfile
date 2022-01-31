@@ -8,6 +8,7 @@ pipeline {
   agent { label 'jdk11-mvn3.8.4' }
      options {
     buildDiscarder(logRotator(numToKeepStr: '2', artifactNumToKeepStr: '2'))
+     }
 
   stages {
 
